@@ -45,9 +45,28 @@
       width: 100%;
       max-width: 1100px;
       margin: 16px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 180px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--primary), #4d6dff);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+      color: #fff;
+      text-align: center;
+    }
+
+    .banner h2 {
+      font-size: 36px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .banner span {
       display: block;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      margin-top: 8px;
+      font-size: 15px;
+      opacity: 0.9;
     }
 
     main {
@@ -103,12 +122,13 @@
 </head>
 <body>
 
-  <header>
-    <h1>Shift Monitoring</h1>
-    <p>Quick Access Google Form per Channel</p>
-  </header>
+  
 
-  <img src="BANNER GFORM.png" alt="Shift Monitoring Banner" class="banner" />
+    <div class="banner">
+    <div>
+      <h2>SHIFT MONITORING</h2>
+    </div>
+  </div>
 
   <main>
     <div class="grid">
@@ -135,9 +155,8 @@
   </main>
 
   <footer>
-    © 2025 QM Master Management · Shift Monitoring Working Master System
+    © 2025 QM Master Management · Shift Monitoring System
   </footer>
 
 </body>
 </html>
-

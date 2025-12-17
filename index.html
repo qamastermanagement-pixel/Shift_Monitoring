@@ -1,81 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shift Monitoring Launcher</title>
+
   <style>
+    :root {
+      --primary: #0000fe;
+      --primary-dark: #0000cc;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #2c2c2c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: white;
-      text-align: center;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
       margin: 0;
-      padding: 0;
     }
-    img {
+
+    header {
+      text-align: center;
+      padding: 24px 16px 8px;
+    }
+
+    header h1 {
+      margin: 12px 0 4px;
+      font-size: 28px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .banner {
       width: 100%;
-      max-width: 1000px;
+      max-width: 1100px;
+      margin: 16px auto 0;
       display: block;
-      margin: auto;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
-    .button-row {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+
+    main {
+      max-width: 1100px;
+      margin: 32px auto;
+      padding: 0 16px 32px;
     }
-    .button-row button {
-      background-color: #0000FE;
-      color: white;
-      font-weight: bold;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+    }
+
+    .channel-btn {
+      background-color: var(--card);
+      border: 2px solid var(--primary);
+      border-radius: 16px;
+      padding: 20px 12px;
       font-size: 18px;
-      padding: 15px 30px;
-      margin: 10px;
-      border: none;
-      border-radius: 8px;
+      font-weight: 600;
+      color: var(--primary);
       cursor: pointer;
-      min-width: 150px;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
     }
-    .button-row button:hover {
-      background-color: #0000cc;
+
+    .channel-btn:hover {
+      background-color: var(--primary);
+      color: #ffffff;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 10px 30px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+
+      .channel-btn {
+        font-size: 16px;
+        padding: 16px 10px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Banner -->
-  <img src="BANNER GFORM.png" alt="Shift Monitoring Banner">
+  <header>
+    <h1>Shift Monitoring</h1>
+    <p>Quick Access Google Form per Channel</p>
+  </header>
 
-  <!-- Baris 1 -->
-  <div class="button-row">
-    <button onclick="window.open('https://link-gform-1.com')">Channel 1</button>
-    <button onclick="window.open('https://link-gform-2.com')">Channel 2</button>
-    <button onclick="window.open('https://link-gform-3.com')">Channel 3</button>
-    <button onclick="window.open('https://link-gform-4.com')">Channel 4</button>
-  </div>
+  <img src="BANNER GFORM.png" alt="Shift Monitoring Banner" class="banner" />
 
-  <!-- Baris 2 -->
-  <div class="button-row">
-    <button onclick="window.open('https://link-gform-5.com')">Channel 5</button>
-    <button onclick="window.open('https://link-gform-6.com')">Channel 6</button>
-    <button onclick="window.open('https://link-gform-7.com')">Channel 7</button>
-    <button onclick="window.open('https://link-gform-8.com')">Channel 8</button>
-  </div>
+  <main>
+    <div class="grid">
+      <button class="channel-btn" onclick="window.open('https://link-gform-1.com')">Channel 1</button>
+      <button class="channel-btn" onclick="window.open('https://link-gform-2.com')">Channel 2</button>
+      <button class="channel-btn" onclick="window.open('https://link-gform-3.com')">Channel 3</button>
+      <button class="channel-btn" onclick="window.open('https://link-gform-4.com')">Channel 4</button>
 
-  <!-- Baris 3 -->
-  <div class="button-row">
-    <button onclick="window.open('https://link-gform-9.com')">Channel 9</button>
-    <button onclick="window.open('https://link-gform-10.com')">Channel 10</button>
-    <button onclick="window.open('https://link-gform-11.com')">Channel 11</button>
-    <button onclick="window.open('https://forms.gle/qaPQmpdxBoL1GG1a9')">Channel 12</button>
-  </div>
+      <button class="channel-btn" onclick="window.open('https://link-gform-5.com')">Channel 5</button>
+      <button class="channel-btn" onclick="window.open('https://link-gform-6.com')">Channel 6</button>
+      <button class="channel-btn" onclick="window.open('https://link-gform-7.com')">Channel 7</button>
+      <button class="channel-btn" onclick="window.open('https://link-gform-8.com')">Channel 8</button>
 
-  <!-- Baris 4 -->
-  <div class="button-row">
-    <button onclick="window.open('https://forms.gle/vzd8aV1tbHhGSsGD6m')">Channel 13</button>
-    <button onclick="window.open('https://link-gform-14.com')">Channel 14</button>
-    <button onclick="window.open('https://link-gform-15.com')">Channel 15</button>
-    <button onclick="window.open('https://link-gform-16.com')">Channel 16</button>
-  </div>
+      <button class="channel-btn" onclick="window.open('https://link-gform-9.com')">Channel 9</button>
+      <button class="channel-btn" onclick="window.open('https://link-gform-10.com')">Channel 10</button>
+      <button class="channel-btn" onclick="window.open('https://link-gform-11.com')">Channel 11</button>
+      <button class="channel-btn" onclick="window.open('https://forms.gle/qaPQmpdxBoL1GG1a9')">Channel 12</button>
+
+      <button class="channel-btn" onclick="window.open('https://forms.gle/vzd8aV1tbHhGSsGD6m')">Channel 13</button>
+      <button class="channel-btn" onclick="window.open('https://link-gform-14.com')">Channel 14</button>
+      <button class="channel-btn" onclick="window.open('https://link-gform-15.com')">Channel 15</button>
+      <button class="channel-btn" onclick="window.open('https://link-gform-16.com')">Channel 16</button>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 QM Master Management · Shift Monitoring System
+  </footer>
 
 </body>
 </html>
-

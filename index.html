@@ -16,10 +16,13 @@
       display: block;
       margin: auto;
     }
-    .button-container {
+    .button-row {
       margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
-    button {
+    .button-row button {
       background-color: #0000FE;
       color: white;
       font-weight: bold;
@@ -29,8 +32,9 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      min-width: 150px;
     }
-    button:hover {
+    .button-row button:hover {
       background-color: #0000cc;
     }
   </style>
@@ -40,25 +44,37 @@
   <!-- Banner -->
   <img src="BANNER GFORM.png" alt="Shift Monitoring Banner">
 
-  <!-- Tombol-tombol -->
-  <div class="button-container">
+  <!-- Baris 1 -->
+  <div class="button-row">
     <button onclick="window.open('https://link-gform-1.com')">Channel 1</button>
     <button onclick="window.open('https://link-gform-2.com')">Channel 2</button>
     <button onclick="window.open('https://link-gform-3.com')">Channel 3</button>
     <button onclick="window.open('https://link-gform-4.com')">Channel 4</button>
+  </div>
+
+  <!-- Baris 2 -->
+  <div class="button-row">
     <button onclick="window.open('https://link-gform-5.com')">Channel 5</button>
     <button onclick="window.open('https://link-gform-6.com')">Channel 6</button>
     <button onclick="window.open('https://link-gform-7.com')">Channel 7</button>
     <button onclick="window.open('https://link-gform-8.com')">Channel 8</button>
+  </div>
+
+  <!-- Baris 3 -->
+  <div class="button-row">
     <button onclick="window.open('https://link-gform-9.com')">Channel 9</button>
     <button onclick="window.open('https://link-gform-10.com')">Channel 10</button>
     <button onclick="window.open('https://link-gform-11.com')">Channel 11</button>
     <button onclick="window.open('https://forms.gle/2U9CAAnD3faQzH1y8')">Channel 12</button>
-    <button onclick="window.open('https://forms.gle/vzd8aV1tbHhGSsGD6')">Channel 13</button>
+  </div>
+
+  <!-- Baris 4 -->
+  <div class="button-row">
+    <button onclick="window.open('https://forms.gle/vzd8aV1tbHhGSsGD6m')">Channel 13</button>
     <button onclick="window.open('https://link-gform-14.com')">Channel 14</button>
     <button onclick="window.open('https://link-gform-15.com')">Channel 15</button>
+    <button onclick="window.open('https://link-gform-16.com')">Channel 16</button>
   </div>
 
 </body>
 </html>
-
